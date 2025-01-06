@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", serif;
+}
+
+/************* partie navigation ***********/
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #373B53;
+}
+
+.logo img{
+    height: 100%;
+}
+
+.couleur {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-couleur {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.profil {
+    display: flex;
+    align-items: center;
+    margin: 0px 20px;
+}
+
+hr {
+    border: 1px solid #494E6E;
+}
+
+/************* partie text ***********/
+
+.partie1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 20px 0px 20px;
+}
+
+.titre p {
+    color: #888EB0;
+}
+
+.partie2 {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.filter {
+    color: rgba(12, 14, 22, 1);
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.statue {
+    display: none;
+}
+
+.boutton {
+    display: flex;
+    flex-direction: row;
+    background-color: #7C5DFA;
+    padding: 15px;
+    border-radius: 500px;
+    gap: 10px;
+}
+
+.boutton button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #7C5DFA;
+    padding: 5px;
+    border-radius: 500px;
+    border: none;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+}
+
+.boutton p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.Invoice {
+    display: none;
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fin h1 {
+    text-align: center;
+    color: #0C0E16;
+    padding-top: 50px;
+}
+
+.fin p {
+    text-align: center;
+    padding: 20px 100px 0px 100px;
+    color: #888EB0;
+}
+
+span {
+    color: #494E6E;
+    font-weight: 500;
+}
+
+/************* partie responsive tablet ***********/
+
+@media screen and (min-width : 768px) {
+    .statue {
+        display: flex;
+        color: black;
+        font-weight: 700;
+    }
+    .Invoice {
+        display: flex;
+        color: white;
+        padding-left: 7px;
+    }
+    .boutton p {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/************* partie responsive pc ***********/
+
+@media screen and (min-width : 1440px) {
+    body {
+        display: flex;
+        flex-direction: row;
+    }
+    .logo img{
+        width: 100%;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+        height: 100vh;
+    }
+    .couleur {
+        display: flex;
+        flex-direction: column;
+    }
+    .img-couleur {
+        display: flex;
+        justify-content: center;
+    }
+    .profil {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
